@@ -2,7 +2,7 @@ export default function Header() {
     return (
         <header>
             <h1>
-                Blog
+                Il mio blog
             </h1>
         </header>
     )
