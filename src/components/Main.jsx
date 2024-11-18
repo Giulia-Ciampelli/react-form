@@ -1,11 +1,16 @@
 // importazioni
 import { useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrashCan } from '@fortawesome/free-solid-svg-icons';
 
 // array post iniziali
 const initialPosts = [
     'post',
     'post'
 ];
+
+// elemento icona
+const icon = <FontAwesomeIcon icon={faTrashCan} />;
 
 export default function Main() {
     const [posts, setPosts] = useState(initialPosts);
@@ -38,6 +43,9 @@ export default function Main() {
                 <ul>
                     {posts.map((post, index) => <li key={index}>
                         {post}
+                        <button>
+                            <FontAwesomeIcon icon={faTrashCan} />
+                        </button>
                     </li>)}
                 </ul>
             </form>

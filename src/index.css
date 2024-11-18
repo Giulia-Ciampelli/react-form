@@ -7,8 +7,17 @@
   box-sizing: border-box;
 }
 
+:root {
+  --dark-colour: #121619;
+  --light-colour: #D7CEB2;
+  --violet-colour: #78586F;
+  --teal-colour: #3E8989;
+}
+
 body {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: var(--dark-colour);
+  background-color: var(--light-colour);
 }
 
 /* #endregion common */
