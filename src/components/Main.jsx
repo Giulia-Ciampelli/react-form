@@ -9,7 +9,6 @@ const initialPosts = [
     'post'
 ];
 
-
 export default function Main() {
     const [posts, setPosts] = useState(initialPosts);
     const [newPost, setNewPost] = useState('');
@@ -29,6 +28,17 @@ export default function Main() {
         setNewPost('');
     }
 
+    // funzione per cancellare post
+    function handleTrashPost(e) {
+
+        // trovare post giusto
+
+        // eliminare con filter
+
+        // aggiornamento UI
+
+    }
+
     return (
         <main>
             <form onSubmit={addPost}>
@@ -41,7 +51,7 @@ export default function Main() {
                 <ul>
                     {posts.map((post, index) => <li key={index}>
                         {post}
-                        <button>
+                        <button onClick={handleTrashPost} data-index={index}>
                             <FontAwesomeIcon icon={faTrashCan} />
                         </button>
                     </li>)}
