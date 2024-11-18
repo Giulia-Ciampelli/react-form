@@ -9,8 +9,6 @@ const initialPosts = [
     'post'
 ];
 
-// elemento icona
-const icon = <FontAwesomeIcon icon={faTrashCan} />;
 
 export default function Main() {
     const [posts, setPosts] = useState(initialPosts);
