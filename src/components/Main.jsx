@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrashCan } from '@fortawesome/free-solid-svg-icons';
 
 // modulo stile
-import style from '../components/Main.module.css'
+import style from '../components/Main.module.css';
 
 // array post iniziali
 const initialPosts = [];
