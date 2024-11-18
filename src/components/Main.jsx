@@ -3,6 +3,9 @@ import { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrashCan } from '@fortawesome/free-solid-svg-icons';
 
+// modulo stile
+import style from '../components/Main.module.css'
+
 // array post iniziali
 const initialPosts = [];
 
@@ -40,10 +43,10 @@ export default function Main() {
 
     return (
         <main>
-            <div className="container">
-                <div className="row">
+            <div className={style.container}>
+                <div className={style.row}>
                     <form onSubmit={addPost}>
-                        <div className="add-post">
+                        <div className={style.addPost}>
                             <input type="text" id="textInput" placeholder="Titolo nuovo post" value={newPost} onChange={e => setNewPost(e.target.value)} />
                             <button type="submit">
                                 Aggiungi post

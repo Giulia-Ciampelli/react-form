@@ -35,68 +35,6 @@ header {
 
 /* #endregion header */
 
-/* #region main */
-main {
-  height: 100vh;
-
-  .container {
-
-    .row {
-      display: flex;
-      justify-content: center;
-
-      form {
-        margin-top: 2rem;
-
-        .add-post {
-          padding: 2rem 0;
-
-          input {
-            border: none;
-            padding: .5rem;
-            border-radius: .5rem;
-            margin: .25rem .5rem .25rem 0;
-          }
-
-          button {
-            border: none;
-            padding: .5rem;
-            border-radius: .5rem;
-            margin: .25rem 0;
-            background-color: var(--teal-colour);
-          }
-        }
-
-        ul {
-
-          li {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            list-style: none;
-
-            span {
-              line-height: 3.5rem;
-              margin-right: 1rem;
-            }
-
-            button {
-              border: none;
-              padding: .5rem;
-              border-radius: .5rem;
-              margin: .25rem 0;
-              background-color: var(--red-colour);
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-/* #endregion main */
-
 /* #region footer */
 footer {
   background-color: var(--dark-colour);
