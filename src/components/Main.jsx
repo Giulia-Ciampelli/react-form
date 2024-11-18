@@ -40,22 +40,28 @@ export default function Main() {
 
     return (
         <main>
-            <form onSubmit={addPost}>
-                <div>
-                    <input type="text" id="textInput" placeholder="Titolo nuovo post" value={newPost} onChange={e => setNewPost(e.target.value)} />
-                    <button type="submit">
-                        Aggiungi post
-                    </button>
+            <div className="container">
+                <div className="row">
+                    <form onSubmit={addPost}>
+                        <div className="add-post">
+                            <input type="text" id="textInput" placeholder="Titolo nuovo post" value={newPost} onChange={e => setNewPost(e.target.value)} />
+                            <button type="submit">
+                                Aggiungi post
+                            </button>
+                        </div>
+                        <ul>
+                            {posts.map((post, index) => <li key={index}>
+                                <span>
+                                    {post}
+                                </span>
+                                <button onClick={handleTrashPost} data-index={index}>
+                                    <FontAwesomeIcon icon={faTrashCan} />
+                                </button>
+                            </li>)}
+                        </ul>
+                    </form>
                 </div>
-                <ul>
-                    {posts.map((post, index) => <li key={index}>
-                        {post}
-                        <button onClick={handleTrashPost} data-index={index}>
-                            <FontAwesomeIcon icon={faTrashCan} />
-                        </button>
-                    </li>)}
-                </ul>
-            </form>
+            </div>
         </main>
     )
 }
