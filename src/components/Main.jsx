@@ -4,10 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrashCan } from '@fortawesome/free-solid-svg-icons';
 
 // array post iniziali
-const initialPosts = [
-    'post',
-    'post'
-];
+const initialPosts = [];
 
 export default function Main() {
     const [posts, setPosts] = useState(initialPosts);
@@ -32,11 +29,13 @@ export default function Main() {
     function handleTrashPost(e) {
 
         // trovare post giusto
+        const postIndexTrash = Number(e.target.getAttribute('data-index'));
 
         // eliminare con filter
+        const newPosts = posts.filter((post, index) => index != postIndexTrash);
 
         // aggiornamento UI
-
+        setPosts(newPosts);
     }
 
     return (
