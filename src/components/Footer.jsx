@@ -2,7 +2,7 @@ export default function Footer() {
     return (
         <footer>
             <p>
-                footer test
+                Made with &hearts; by Giulia
             </p>
         </footer>
     )

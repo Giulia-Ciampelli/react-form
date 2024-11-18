@@ -12,6 +12,7 @@
   --light-colour: #D7CEB2;
   --violet-colour: #78586F;
   --teal-colour: #3E8989;
+  --red-colour: #D44D5C;
 }
 
 body {
@@ -36,16 +37,16 @@ header {
 
 /* #region main */
 main {
+  height: 100vh;
 
   .container {
-    width: 80%;
-    margin: auto;
 
     .row {
       display: flex;
       justify-content: center;
 
       form {
+        margin-top: 2rem;
 
         .add-post {
           padding: 2rem 0;
@@ -62,6 +63,7 @@ main {
             padding: .5rem;
             border-radius: .5rem;
             margin: .25rem 0;
+            background-color: var(--teal-colour);
           }
         }
 
@@ -84,6 +86,7 @@ main {
               padding: .5rem;
               border-radius: .5rem;
               margin: .25rem 0;
+              background-color: var(--red-colour);
             }
           }
         }
@@ -95,4 +98,14 @@ main {
 /* #endregion main */
 
 /* #region footer */
+footer {
+  background-color: var(--dark-colour);
+  padding: 2rem;
+
+  p {
+    text-align: center;
+    color: var(--light-colour);
+  }
+}
+
 /* #endregion footer */
